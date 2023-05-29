@@ -1,0 +1,5 @@
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter06/07-testing/cmake-build-debug/CMakeFiles/program.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter06/07-testing/cmake-build-debug/CMakeFiles/main.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter06/07-testing/cmake-build-debug/CMakeFiles/test.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter06/07-testing/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter06/07-testing/cmake-build-debug/CMakeFiles/rebuild_cache.dir

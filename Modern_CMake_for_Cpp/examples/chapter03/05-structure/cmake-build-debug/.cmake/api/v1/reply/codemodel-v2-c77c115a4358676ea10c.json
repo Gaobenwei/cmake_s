@@ -1,0 +1,195 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/app1",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-src.app1-Debug-411519ce6edc10a54f09.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/app1",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/app1/lib3",
+					"jsonFile" : "directory-src.app1.lib3-Debug-670c9062e2dfd4feef18.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/app1/lib3",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/app2",
+					"jsonFile" : "directory-src.app2-Debug-8bdf24ff04b919d8a3a6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/app2",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src/lib1",
+					"jsonFile" : "directory-src.lib1-Debug-31a74bd150d60049538a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/lib1",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "src/lib2",
+					"jsonFile" : "directory-src.lib2-Debug-1c4723c31a216e414411.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/lib2",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"name" : "Structure",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "app1::@166964b1569c3b89c2ef",
+					"jsonFile" : "target-app1-Debug-3be958b820d438ae6f1b.json",
+					"name" : "app1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "app2::@1639104c9b5520400fc0",
+					"jsonFile" : "target-app2-Debug-b7b84b801942f1b56113.json",
+					"name" : "app2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "lib1::@7425fd4446e4b96194be",
+					"jsonFile" : "target-lib1-Debug-90fe4dcea9bc0cd20dda.json",
+					"name" : "lib1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "lib2::@9d8302d2c5a23c90188d",
+					"jsonFile" : "target-lib2-Debug-8c3fb89462dd9793847c.json",
+					"name" : "lib2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "lib3::@fb6c9d4e262fe4ba2aaa",
+					"jsonFile" : "target-lib3-Debug-25dc9b3483afa16efdb9.json",
+					"name" : "lib3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter03/05-structure/cmake-build-debug",
+		"source" : "C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter03/05-structure"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

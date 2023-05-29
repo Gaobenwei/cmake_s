@@ -1,0 +1,9 @@
+# ninja log v5
+4	60	7069848059042488	CMakeFiles/calculations.dir/calculations.cpp.obj	34ce3384a4c34890
+61	138	7069848059797384	libcalculations.a	38ce07aafbcbd7eb
+1	387	7069848062308305	CMakeFiles/gui_app.dir/gui_app.cpp.obj	7a7628f47fc06ca7
+8	399	7069848062438334	CMakeFiles/drawing.dir/drawing.cpp.obj	5f641f4c0f3d223e
+400	468	7069848063128491	libdrawing.a	ea6b2a6437f09f58
+468	606	7069848064478797	gui_app.exe	8d646ac6e4f62722
+0	304	7069850857652276	CMakeFiles/terminal_app.dir/terminal_app.cpp.obj	86be58824034d69
+305	429	7069850858864223	terminal_app.exe	a102618e577063c1

@@ -1,0 +1,7 @@
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter04/01-targets/cmake-build-debug/CMakeFiles/terminal_app.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter04/01-targets/cmake-build-debug/CMakeFiles/gui_app.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter04/01-targets/cmake-build-debug/CMakeFiles/calculations.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter04/01-targets/cmake-build-debug/CMakeFiles/drawing.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter04/01-targets/cmake-build-debug/CMakeFiles/checksum.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter04/01-targets/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter04/01-targets/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,6 @@
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter03/03-add_subdirectory/cmake-build-debug/CMakeFiles/Rental.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter03/03-add_subdirectory/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter03/03-add_subdirectory/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter03/03-add_subdirectory/cmake-build-debug/cars/CMakeFiles/cars.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter03/03-add_subdirectory/cmake-build-debug/cars/CMakeFiles/edit_cache.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter03/03-add_subdirectory/cmake-build-debug/cars/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,5 @@
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter06/06-unresolved/cmake-build-debug/CMakeFiles/outer.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter06/06-unresolved/cmake-build-debug/CMakeFiles/nested.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter06/06-unresolved/cmake-build-debug/CMakeFiles/main.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter06/06-unresolved/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/11048/Desktop/Modern-CMake-for-Cpp/examples/chapter06/06-unresolved/cmake-build-debug/CMakeFiles/rebuild_cache.dir

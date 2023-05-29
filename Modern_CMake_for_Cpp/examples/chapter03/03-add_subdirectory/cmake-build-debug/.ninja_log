@@ -1,0 +1,6 @@
+# ninja log v5
+6	319	7069692771256608	cars/CMakeFiles/cars.dir/car.cpp.obj	947078867b662c67
+1	384	7069692771909703	CMakeFiles/Rental.dir/main.cpp.obj	6433cdc2d1976c9b
+384	530	7069692773344882	Rental.exe	b2b61f29c70e8abd
+4	348	7069704363808079	CMakeFiles/Rental.dir/main.cpp.obj	6433cdc2d1976c9b
+349	480	7069704365108601	Rental.exe	b2b61f29c70e8abd
