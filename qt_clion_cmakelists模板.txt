@@ -1,0 +1,95 @@
+cmake_minimum_required(VERSION 3.24)
+project(untitled)
+
+set(CMAKE_CXX_STANDARD 17)
+#[[
+set(CMAKE_AUTOMOC ON)指示CMake在构建过程中自动执行MOC生成器，
+它用于在运行是处理某些特殊的宏（例如Q_OBJECT和Q_GADGET）的头文件，
+以生成额外的C++源文件。他还将新生成的源文件自动添加到构建体系中。
+
+set(CMAKE_AUTOUIC ON)指示CMake在构建过程中自动执行UIC编译器，
+它用于将UI文件（在QT中通常使用.ui扩展名）转换c++代码。
+它还将生成的c++源文件自动添加到构建体系中。
+
+set(CMAKE_AUTORCC ON)指示CMake在构建过程中自动执行RCC编译器，
+它用于将.qrc文件转换c++代码。.qrc文件定义了程序运行时使用的资源，例如图标、图像等。
+它还将生成的c++源文件自动添加到构建体系中。
+
+]]#
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+#设置QT的安装路径
+set(CMAKE_PREFIX_PATH "C:\\Qt\\6.4.3\\mingw_64\\lib\\cmake")
+
+#[[
+设置icon；
+set(APP_ICON ${CMAKE_CURRENT_SOURCE_DIR}/app.rc)
+设置程序icon，使用命令生成中间文件；
+因为这里clion路径有空格等无法生成该为手动生成icon
+windres -i xxx.rc -o xxx.o
+
+]]#
+set(APP_ICON ${CMAKE_CURRENT_SOURCE_DIR}/GlowGlobe.rc)
+
+#查找QT库和组件
+find_package(Qt6 COMPONENTS
+        Core
+        Gui
+        Widgets
+        Network
+        REQUIRED)
+#[[
+添加可执行文件
+WIN32防止在Windows上创建控制台窗口。
+MACOSX_BUNDLE在macOS上创建应用程序包
+
+]]#
+add_executable(untitled WIN32 main.cpp mainwindow.h mainwindow.cpp mainwindow.ui ${APP_ICON})
+
+#链接库
+target_link_libraries(untitled
+        Qt::Core
+        Qt::Gui
+        Qt::Widgets
+        Qt::Network
+        )
+
+#配置QT环境和静态库（Debug or Release）
+if (WIN32 AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+    #默认情况下将调试后缀设置为空字符串，如果构建类型是Debug，则将设置为"d"
+    set(DEBUG_SUFFIX)
+    if (MSVC AND CMAKE_BUILD_TYPE MATCHES "Debug")
+        set(DEBUG_SUFFIX "d")
+    endif ()
+    #将QT_INSTALL_PATH设置为CMake前缀路径
+    set(QT_INSTALL_PATH "${CMAKE_PREFIX_PATH}")
+
+    #如果cmake前缀路径下不存在QT bin目录，则尝试在父目录中寻找
+    if (NOT EXISTS "${QT_INSTALL_PATH}/bin")
+        set(QT_INSTALL_PATH "${QT_INSTALL_PATH}/..")
+        if (NOT EXISTS "${QT_INSTALL_PATH}/bin")
+            set(QT_INSTALL_PATH "${QT_INSTALL_PATH}/..")
+        endif ()
+    endif ()
+
+    #如果存在适当的QT平台插件DLL文件，则将其复制到输出目录的plugins/platforms目录当中
+    if (EXISTS "${QT_INSTALL_PATH}/plugins/platforms/qwindows${DEBUG_SUFFIX}.dll")
+        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+                COMMAND ${CMAKE_COMMAND} -E make_directory
+                "$<TARGET_FILE_DIR:${PROJECT_NAME}>/plugins/platforms/")
+        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+                COMMAND ${CMAKE_COMMAND} -E copy
+                "${QT_INSTALL_PATH}/plugins/platforms/qwindows${DEBUG_SUFFIX}.dll"
+                "$<TARGET_FILE_DIR:${PROJECT_NAME}>/plugins/platforms/")
+    endif ()
+
+    #对于每个QT库（Core Gui Widgets Network）,将相关的DLL文件复制到输出目录
+    foreach (QT_LIB Core Gui Widgets Network)
+        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+                COMMAND ${CMAKE_COMMAND} -E copy
+                "${QT_INSTALL_PATH}/bin/Qt6${QT_LIB}${DEBUG_SUFFIX}.dll"
+                "$<TARGET_FILE_DIR:${PROJECT_NAME}>")
+    endforeach (QT_LIB)
+endif ()
